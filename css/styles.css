@@ -10251,3 +10251,14 @@ form .row:first-child .floating-label-form-group {
   font-size: 14px;
 
 }
+
+.bkimage {
+
+  ackground-image: url("https://www.twintechpromo.com/ppai2021/assets/img/portfolio/vid-2.gif");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  ackground-color: #336688;
+
+  background-size: cover;
+
+}
