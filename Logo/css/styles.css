@@ -22,10 +22,10 @@ transform: translate(-50%, -50%);
 
 .centerTest {
       position: fixed;
-      width: 820px;
-      height: 800px;
+      width:100%;
+      height: 1000px;
       left: 50%;
-      ackground-image: url(../luft_cube-1.jpg);
+
       background-repeat: no-repeat;
       top: 50%;
       background-size: cover;
@@ -149,7 +149,8 @@ button  {
       background-color: #FFF;
       height: 30px;
       color: white;
-      margin: 10px 0px 0px 0px;
+      argin: 10px 0px 0px 0px;
+
 
 }
 
@@ -201,8 +202,9 @@ switch {
 #output {
       argin: -10px 0px 0px 438px;
       ransform:skew(-1deg,-9deg) scaleX(1);
-      width: 70px;
+      width: 125px;
       height: 100%;
+      padding: 15px;
 
 
 
@@ -224,6 +226,7 @@ switch {
       padding: 10px;
       border-radius: 10px;
       font-weight: 500;
+        font-size: 12px;
       }
 
 .loadtext {
