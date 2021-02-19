@@ -65,8 +65,8 @@ button {
                               <div class="col"><label for="file" class="text-uppercase button" style="cursor: pointer;">Upload logo</label></div>
                               <div class="col"><button onclick="myCanvas()">Place Logo</button></div>
                               <div class="col"><button id='linkspot'></button ></div>
-                              <div class="col"><button onclick="location.href = 'https://ttimau.github.io/TTI/Logo/index.html';">Restart</button></div>
-                              <div class="col"><button onclick="dis()">test</button></div>
+                              <div class="col"><button onclick="myCanvasA();">Restart</button></div>
+                              <div class="col"><button onclick="myCanvasB();">test</button></div>
 
                         </div>
 
@@ -93,6 +93,8 @@ button {
 <!--<img id="scream" src="logo-2.png" alt="The Scream" width="200" height="200">-->
 <img id="luft" src="connect-2-in-1-charging-cable.jpg" alt="image" width="0" height="0">
 
+<!--<img id="scream" src="logo-2.png" alt="The Scream" width="200" height="200">-->
+<img id="pink" src="pink.jpg" alt="image" width="0" height="0">
 
 
 <script>
@@ -159,6 +161,17 @@ function myCanvasA() {
   var ctx = c.getContext("2d");
   var img = document.getElementById("luft");
   ctx.drawImage(img,0,0);
+
+  function myCanvasB() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("pink");
+    ctx.drawImage(img,0,0);
+
+
+
+
+
 }
 
 </script>
