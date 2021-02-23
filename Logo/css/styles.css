@@ -202,7 +202,7 @@ switch {
 #output {
       argin: -10px 0px 0px 438px;
       ransform:skew(-1deg,-9deg) scaleX(1);
-      width: 125px;
+      width: 80px;
       height: 100%;
       padding: 15px;
 
@@ -227,6 +227,7 @@ switch {
       border-radius: 10px;
       font-weight: 500;
         font-size: 12px;
+
       }
 
 .loadtext {
