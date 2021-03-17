@@ -10299,3 +10299,44 @@ form .row:first-child .floating-label-form-group {
         z-index: 100;
 
 }
+
+.spin {
+
+        transition-duration: 1s;
+        idth: 100%;
+        eight: 100%;
+
+}
+
+.spin:hover {
+        color: blue;
+        transform: rotate(360deg);
+
+}
+
+.fa-times {
+        transition-duration: 1s;
+
+}
+
+
+.fa-times:hover {
+        color: blue;
+        transform: rotate(360deg);
+
+}
+
+.fa-plus {
+        transition-duration: 1s;
+
+}
+
+
+.fa-plus:hover {
+        color: blue;
+        transform: rotate(360deg);
+        width: 50%;
+        height: 50%;
+        opacity: 0.1;
+
+}
