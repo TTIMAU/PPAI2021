@@ -10361,8 +10361,9 @@ letter-spacing: 1px;
 
 .aOpButton {
         border-radius: 5px;
-        color: #1d3dff;
-        background-color: #ddd;
+        border: none;
+        color: #ad0d0f;
+        background-color: #fff;
         width: 3em;
         font-weight: 900;
 }
