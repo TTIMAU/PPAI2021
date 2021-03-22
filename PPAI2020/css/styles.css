@@ -10287,7 +10287,6 @@ form .row:first-child .floating-label-form-group {
 
 
 
-
 .tti-id {
         width: 100%;
         margin: 0px;
@@ -10300,19 +10299,6 @@ form .row:first-child .floating-label-form-group {
 
 }
 
-.spin {
-
-        transition-duration: 1s;
-        idth: 100%;
-        eight: 100%;
-
-}
-
-.spin:hover {
-        color: blue;
-        transform: rotate(360deg);
-
-}
 
 .fa-times {
         transition-duration: 1s;
@@ -10320,9 +10306,16 @@ form .row:first-child .floating-label-form-group {
 }
 
 
-.fa-times:hover {
+.btn:hover  .fa-times {
         color: blue;
-        transform: rotate(360deg);
+        transform: rotate(180deg);
+
+}
+
+
+.fa-times:hover   {
+        color: blue;
+        transform: rotate(180deg);
 
 }
 
@@ -10331,12 +10324,80 @@ form .row:first-child .floating-label-form-group {
 
 }
 
-
 .fa-plus:hover {
-        color: blue;
-        transform: rotate(360deg);
-        width: 50%;
-        height: 50%;
-        opacity: 0.1;
+
+        transform: rotate(180deg);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+
+
+}
+
+
+.portfolio-item:hover .fa-plus {
+        transform: rotate(180deg);
+}
+
+.text-1-space {
+        letter-spacing: 1px;
+
+
+}
+
+.btn {
+letter-spacing: 1px;
+
+}
+
+.textBlock {
+        font-size: .75em;
+        letter-spacing: 1px;
+        width: 80%;
+
+
+}
+
+.aOpButton {
+        border-radius: 5px;
+        color: #1d3dff;
+        background-color: #ddd;
+        width: 3em;
+        font-weight: 900;
+}
+
+
+.aOpButton:hover {
+        border-radius: 5px;
+        color: #dd1d3f;
+        background-color: #ddd;
+}
+
+.flexSVG {
+        width: 7em;
+
+}
+
+.twintech {
+        width: 9em;
+
+}
+
+
+.promoshow {
+        background-color: #7ec242;
+        transition-duration: 0.25s;
+}
+
+
+.promoshow:hover {
+        background-color: #006300;
+
+}
+
+.promoshow2:hover {
+
+        opacity: 0.5;
 
 }
