@@ -1,1646 +1,333 @@
-<!DOCTYPE html>
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@TTIMAU
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+TTIMAU
+/
+TTI
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+TTI/Logo/index.html
+@TTIMAU
+TTIMAU u
+Latest commit 563aae7 on Feb 22
+ History
+ 1 contributor
+286 lines (177 sloc)  6.39 KB
+
+
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Twintech Industry Inc</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+  <head>
+        <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
 
+         <link rel="stylesheet" href="css/styles.css">
+<style>
+*{margin:0;padding:0;font-family:sans-serif;background: #ddd}
+canvas{ ackground: #FFF}
+ a {
+    background: #aaa;
+    color: #fff;
+    padding: 5px 10px;
+}
 
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
+.base {
+ background-color: #FFF;
 
-        <div class="tti-id">
-                 <div class="container">
-                    <div class="id-text">
-                            <span> <span >ASI 92357</span>    <span style="margin-left: 2%;">PPAI 261545</span>  <span style="margin-left: 2%;">SAGE 67545</span>
-                    </div>
-            </div>
-            </div>
+}
 
+.baseA {
+ background-color: #FFF;
 
+}
 
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+button {
+      background-color: #aaa;
+      width:100%
+}
 
-
-                        <div class="container" >
-
-                                        <a href="https://www.twintechpromo.com/"><img class="img-fluid pr-3" src="assets/img/twintech-white.png" alt="" /></a>
-
-                                        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                                    Menu
-                                    <i class="fas fa-bars"></i>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarResponsive">
-                                    <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#new">New & Top Selling</a></li>
-                                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#leaflets">LEAFLETS</a></li>
-                                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">SUBSCRIBE</a></li>
-                                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT</a></li>
-                                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#page-top"><div class="divider-custom-icon"><i class="fas fa-arrow-circle-up"></i></div></a>  </li>
-                                            <a class="text-center navbar-brand js-scroll-trigger" href="#page-top"></a>
-                                    </ul>
-                                </div>
-
-                   </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead text-gray text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <div class="row my-2 text-uppercase rounded">
-                        <div class="col m-3 ">
-
-
-                                <!-- Leaflet Menu Section-->
-                              <section class="page-section portfolio" id="menu">
-
-
-
-                                <!-- menu Item 1-->
-                                <div lass="col-md-6 col-lg-4 mb-5">
-                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#menuModal1">
-                                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                        </div>
-
-                                                <img class="masthead-avatar mb-1 rounded" src="assets/img/TTI-catalog-2021_thnl.jpg" alt="Twintech 2021 Catalog" />
-                                        <p class="masthead-subheading font-weight-light mb-0">Twintech CATALOG 2021</p>
-                                    </div>
-                                </div>
+</style>
 
 
 
 
+</head>
+<body>
+
+
+<div id="base" lass="base" width="200px" height="200px" ></div>
+
+
+<div>
+      <div id="ton" lass="centerTest ">
+
+            <div id="imageDIV" >
 
 
 
-                        </div>
-                        <div class="col m-3">
-                                <a href="https://www.twintechpromo.com/img/cms/pdf/PPE_Catalog_2021.pdf" target="_blank">  <img class="masthead-avatar mb-1 rounded" src="assets/img/PPE-catalog-2021_thnl.jpg" alt="Twintech 2021 PPE Catalog" /></a>
-                                <p class="masthead-subheading font-weight-light mb-0">2021 PPE CATALOG</p>
-                        </div>
-                        <div class="col m-3">
-                                <a href="https://mailchi.mp/twintechpromo/buy-1-get-10-mask-special" target="_blank">
-
-                                                <img class="masthead-avatar mb-1 rounded" src="assets/img/TTI_mask_special_thnl.jpg">
-
-                                </a>
-                                <p class="masthead-subheading font-weight-light mb-0">10 For 1 mask special offer</p>
-                        </div>
-                        <div class="col m-3">
-                                <a href="https://mailchi.mp/twintechpromo/hand-sanitizer-sale" target="_blank">  <img class="masthead-avatar mb-1 rounded" src="assets/img/hand-sanitizer-sale-thnl.jpg" alt="" /></a>
-                                <p class="masthead-subheading font-weight-light mb-0">hand Sanitizer sale</p>
-                        </div>
+                  <div ><img  id="output" />
                   </div>
-                <!-- Masthead Heading-->
+                  <div>
 
-
-
-            </div>
-
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="new">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">NEW & TOP SELLING</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-video"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto menu-img-bkgrd" data-toggle="modal" data-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-
-                            <img class="img-fluid" src="assets/img/portfolio/luft-cube.jpg" alt="" />
-                            <div><p class="text-center menu-title-text my-1">LUFT CUBE AIR PURIFIER(#2071)</p>
-                            </div>
-                            <iframe class="img-fluid" src="https://player.vimeo.com/video/498442334" width="640" height="360" frameborder="0" allow="autoplay;"></iframe>
-
+                        <div><p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
                         </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto menu-img-bkgrd" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-
-                            <img class="img-fluid " src="assets/img/portfolio/bodhi-leaf.jpg" alt="" />
-                            <div><p class="text-center menu-title-text my-1  text-uppercase">Direct-Trade Specialty Coffee</p></div>
-
-                            <iframe  class="img-fluid" width="100%" height="315" src="https://player.vimeo.com/video/498950431" frameborder="0" controls="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"></iframe>
-
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto menu-img-bkgrd" data-toggle="modal" data-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/soul-buddies.jpg" alt="" />
-                              <div><p class="text-center menu-title-text my-1">SOUL BUDDIES(#2073)</p>
-                              </div>
-                            <iframe class="img-fluid" width="560" height="315" src="https://player.vimeo.com/video/498967615" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center">
-                    <!-- Portfolio Item 4-->
-
-                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto menu-img-bkgrd" data-toggle="modal" data-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <!--<img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="" />-->
-                            <img class="img-fluid" src="assets/img/portfolio/9025_Zoes-water-bottle.jpg" alt="" />
-                            <div><p class="text-center menu-title-text my-1">ZOES WATER BOTTLE(#9025)</p></div>
-                            <iframe class="img-fluid" width="560" height="315" src="https://www.youtube.com/embed/IpCW_iSS0oI?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                  <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto menu-img-bkgrd" data-toggle="modal" data-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <!--<img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" />-->
-                            <img class="img-fluid" src="assets/img/portfolio/awesome-mixtape.jpg" alt="" />
-                            <div><p class="text-center menu-title-text my-1">AWESOME MIXTAPE(#2839)</p>
-                            </div>
-                            <iframe class="img-fluid" width="560" height="315" src="https://www.youtube.com/embed/9twDmCWXVeE?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto menu-img-bkgrd" data-toggle="modal" data-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/2147_A1-Bamboo-speaker_01.png" alt="" />
-                              <div><p class="text-center menu-title-text my-1">A1 BAMBOO SPEAKER(#2147)</p></div>
-                            <iframe class="img-fluid" width="560" height="315" src="https://www.youtube.com/embed/DkaeEjF4UIE?controls=0title=0&byline=0&portrait=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-                        </div>
-                    </div>
-
-                  </div>
-
-        </section>
-
-          <!-- Leaflet Menu Section-->
-        <section class="bg-secondary page-section portfolio" id="leaflets">
-            <div class="container">
-                <!-- Leaflets Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">LEAFLETS</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-file-alt"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Leaflets  Grid Items-->
-                <div class="row justify-content-center">
-                  <!-- Leaflets Item 03-->
-                  <div class="col-md-6 col-lg-4 mb-5">
-                      <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal03">
-                          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                          </div>
-                          <img class="img-fluid" src="assets/img/portfolio/Flyer_Coffee_V2_TTI_thnl.jpg" alt="" />
-                      </div>
-                  </div>
-                  <!-- Leaflets Item 02-->
-                  <div class="col-md-6 col-lg-4 mb-5">
-                      <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal02">
-                          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                          </div>
-                          <img class="img-fluid" src="assets/img/portfolio/2073_Flyer_Soul-Buddie_V3_TTI_thnl.jpg" alt="" />
-                      </div>
-                  </div>
-                  <!-- Leaflets Item 01-->
-                  <div class="col-md-6 col-lg-4 mb-5">
-                      <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal01">
-                          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                          </div>
-                          <img class="img-fluid" src="assets/img/portfolio/2071_Flyer_Luft-Cube-Air-Purifier_V4_TTI_thnl.jpg" alt="" />
-                      </div>
-                  </div>
-
-                    <!-- Leaflets Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2009_EB04-Earbuds_WP_tnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2025_Verge-Pro_WP_tmnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2041_Night-Lamp_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2053_Centurion_WP_tnl.jpg" alt="" />
-                        </div>
-                    </div>
-
-                    <!-- Leaflets Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2054_Charge-All-Cable-2-thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 6-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2219-2220_Power-Shot_WP-thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 7-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal7">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2142_Lean-On-Me-Jr-thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 8-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal8">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2147_A1-Bamboo-Speaker_WP-thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 9-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal9">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2218_Soul_WP-thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 10-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal10">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2225_Loop-Tale_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-
-                    <!-- Leaflets Item 11-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal11">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2333-2334_Smart-Plug_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 12-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal12">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2351_Cinema-Cable_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 13-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal13">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2635_Chameleon-Square_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 14-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal14">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2672-2674_Ginza_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 15-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal15">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2695_Pebble_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 16-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal16">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2698_The-Tranq_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 17-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal17">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2702_Cypress_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 18-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal18">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2736_Seek_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 19-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal19">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2839_Awesome-Mixtape_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 20-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal20">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2840_Seek-Lite_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 21-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal21">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_3043_Non-Contact-Infrared-Thermometer_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 22-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal22">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_9000_Sierra_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 23-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal23">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_9025_ZoeS-Bottle_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 24-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal24">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_9068_BROOC_V2_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-                    <!-- Leaflets Item 25-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#leafletModal25">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Flyer_2381_Power-Bar_WP_thnl.jpg" alt="" />
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
-        <section class="page-section bg-primary text-white mb-0" id="contact">
-            <div class="container">
-              <!-- Contact Section Heading-->
-              <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">SUBSCRIBE</h2>
-              <!-- Icon Divider-->
-              <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon"><i class="fas fa-envelope-open-text"></i></div>
-                  <div class="divider-custom-line"></div>
-              </div>
-              <div class="fluid class portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" >
-                <iframe class="mx-auto" width="560" height="1050" src="https://twintechpromo.us2.list-manage.com/subscribe?u=71cd372eabc283ce911b3bb16&id=1040752e08" frameborder="0" ></iframe>
-              </div>
-
-            </div>
-          </section>
-
-        <!-- About Section-->
-        <section class="bg-secondary page-section text-white mb-0" id="about">
-            <div class="container">
-
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-poll"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 m-auto"><p class="lead">TWINTECH INDUSTRY, INC is a leading supplier for the promotional products industry. Our mission is to help our clients build stronger and deeper customer relationships through innovative gift items that are useful, enjoyable, and meaningful.</p></div>
-
-
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://www.twintechpromo.com/" target="_blank">
-                        <i class="fas fa-share-alt"></i>
-                         <span style="margin-left: 10px;">TWINTECH HOMEPAGE</span>
-                    </a>
-
-                    <div class="my-3">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/TwintechPromo/" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/TwinTechPromo" target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/company/twintech-industry-inc./" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/twintechpromo/"  target="_blank"><i class="fab fa-instagram-square"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.twintechpromo.com/"  target="_blank"><i class="fas fa-home"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright © Twintech Industry, Inc. 2020</small></div>
-        </div>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed">
-            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
                         <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Luft Cube Air Purifier(#2071)</h2>
-                                    <!-- Icon Divider-->
+                        <div  class="row">
+                              <div class="col"><label for="file" class="text-uppercase button" style="cursor: pointer;">Upload logo</label></div>
+                              <div class="col"><button onclick="myCanvas()">Place</button></div>
+                              <div class="col"><button id='linkspot'></button ></div>
+                              <div class="col"><button onclick="myCanvasA();">Silver</button></div>
+                              <div class="col"><button onclick="myCanvasB();">Pink</button></div>
+                              <div class="col"><button onclick="myCanvasC();">Black</button></div>
 
-
-
-                                    <!-- Portfolio Modal - Image-->
-                                    <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe src="https://player.vimeo.com/video/498442334" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                    </div>
-                                      <div class="my-2"><input type="button" onclick="window.open('https://www.twintechpromo.com/1023-luft-cube-air-purifier.html');" target='_blank' value="Product Page" /></div>
-
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">The Luft Cube is a compact personal air purifier that is a must-have for any busy professional. It comes equipped with the latest technology in air purifying technology: an eco-friendly reusable metal mesh filter and solid-state photocatalysis purification(SPP) nanotechnology. Pollutants such as molds, bacteria, odors, allergens, and fungus are broken down and deliver a better air quality that makes it a perfect accessory for the home, car, or office. Improve the quality of your life and get the Luft Cube.   </p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Direct-Trade Specialty Coffee</h2>
 
-                                    <!-- Portfolio Modal - Image-->
-                                    <div class="embed-responsive embed-responsive-4by3">
-                                      <iframe src="https://player.vimeo.com/video/498950431" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                    </div>
-                                    <!-- Portfolio Modal - Text-->
-                                       <div class="my-2"><input type="button" onclick="window.open('https://www.twintechpromo.com/110-coffee-at-home-list.html');" target='_blank' value="Product Page" /></div>
-                                       <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('assets/img/pdf/Flyer_Coffee_V2_TTI.pdf');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div>
 
-                                    <p class="mb-5">Specialty coffee can consistently exist through the dedication of the people who have made it their life's work to continually make quality their highest priority.  Great coffee starts with the producer whose family likely has spent generations perfecting their approach to farming the highest quality coffee possible. </p>
-                                    </div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
+                        <div class="row">
+
+
+                                    <canvas id="myCanvas"   class="base "  width="750" height="750">Your browser does not support Canvas.</canvas>
+
+
                         </div>
-                    </div>
-                </div>
+
+
+                  </div>
             </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Soul Buddies(#2073)</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <div class="embed-responsive embed-responsive-4by3">
-                                  <iframe width="560" height="315" src="https://player.vimeo.com/video/498967615" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <!-- Portfolio Modal - Text-->
-                                      <div class="my-2"><input type="button" onclick="window.open('https://www.twintechpromo.com/1026-soul-buddies.html');" target='_blank' value="Product Page" /></div>
-                                    <p class="mb-5">The Soul Buddies are a wireless speaker and earbuds in one. A very convenient portable Bluetooth speaker that stores a pair of wireless earbuds when you need to switch to private listening. With a lever clip to easily attached to a backpack, handbag, or carrying case while traveling.</p>
-
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-           <div class="modal-dialog modal-xl" role="document">
-               <div class="modal-content">
-                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                       <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                   </button>
-                   <div class="modal-body text-center">
-                       <div class="container">
-                           <div class="row justify-content-center">
-                               <div class="col-lg-8">
-                                   <!-- Portfolio Modal - Title-->
-                                   <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">ZoëS Singing Water Bottle(#9025)</h2>
-
-                                   <!-- Portfolio Modal - Image-->
-                                   <div class="embed-responsive embed-responsive-4by3">
-                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/IpCW_iSS0oI?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                   </div>
-                                     <div class="my-2"><input type="button" onclick="window.open('https://www.twintechpromo.com/613-3482-zoes-thermal-bottle-with-integrated-bluetooth-speaker-base.html#/1-color-black');" target='_blank' value="Product Page" /></div>
-                                   <!-- Portfolio Modal - Text-->
-                                   <p class="my-5">6+ HOUR PLAYTIME | HOT 12-HOURS  | COLD 24-HOURS </br></br>
-
-The Zoes Thermal Bluetooth Speaker Bottle is uniquely a fun audio device and water bottle. It's useful, stylish, fun, and a perfect gift for anyone! The integrated Bluetooth speaker base is a great way to privately listen to your favorite songs or audiobook while on vacation or a business trip, plus it is detachable and rechargeable.
-
-The Zoes Thermal Bluetooth Speaker Bottle is vacuum insulated and copper-lined both inside and out to help keep your beverage hot for 12 hours or cold for 24! It comes packaged in a special black gift box complete with instructions and a USB cable for recharging the Bluetooth speaker base.</p>
-
-                                   <button class="btn btn-primary" data-dismiss="modal">
-                                       <i class="fas fa-times fa-fw"></i>
-                                       Close Window
-                                   </button>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-           <div class="modal-dialog modal-xl" role="document">
-               <div class="modal-content">
-                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                       <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                   </button>
-                   <div class="modal-body text-center">
-                       <div class="container">
-                           <div class="row justify-content-center">
-                               <div class="col-lg-8">
-                                   <!-- Portfolio Modal - Title-->
-                                   <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Awesome Mixtape(#2839)</h2>
-
-                                   <!-- Portfolio Modal - Image-->
-                                   <div class="embed-responsive embed-responsive-4by3">
-                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/9twDmCWXVeE?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                   </div>
-                                   <!-- Portfolio Modal - Text-->
-                                   <div>
-                                       <div class="my-2"><input type="button" onclick="window.open('https://www.twintechpromo.com/843-3642-awesome-mixtape.html#/1-color-black');" target='_blank' value="Product Page" /></div>
-                                   <p class="my-5">Hear your mix straight from the tape with the wireless Awesome Mixtape speaker. Get big and clear sounds with built-in speakers that are great for work-outs or relaxing. The fun retro cassette fits easily in your pocket when you are on the go. Customize the “A-side” label with a full-color design that will show off your brand with style point</p>
-                                   </div>
-                                   <button class="btn btn-primary" data-dismiss="modal">
-                                       <i class="fas fa-times fa-fw"></i>
-                                       Close Window
-                                   </button>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-           <div class="modal-dialog modal-xl" role="document">
-               <div class="modal-content">
-                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                       <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                   </button>
-                   <div class="modal-body text-center">
-                       <div class="container">
-                           <div class="row justify-content-center">
-                               <div class="col-lg-8">
-                                   <!-- Portfolio Modal - Title-->
-                                   <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">A1 BAMBOO BLUETOOTH SPEAKER</h2>
-                                   <!-- Icon Divider-->
-                                   <div class="divider-custom">
-                                   </div>
-                                   <!-- Portfolio Modal - Image-->
-                                   <div class="embed-responsive embed-responsive-4by3">
-                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/DkaeEjF4UIE?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                   </div>
-                                   <!-- Portfolio Modal - Text-->
-                                     <div class="my-2"><input type="button" onclick="window.open('https://www.twintechpromo.com/647-a1-bamboo-bluetooth-speaker.html');" target='_blank' value="Product Page" /></div>
-                                   <p class="mb-5">Chic Bluetooth speaker with bamboo decoration area provides a clean look and great sound. Print or engrave the bamboo surface to promote your event or message! Packed in gift box packaging.</p>
-
-                                   <button class="btn btn-primary" data-dismiss="modal">
-                                       <i class="fas fa-times fa-fw"></i>
-                                       Close Window
-                                   </button>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
+</div>
 
 
 
-              <!-- Leaflet Window Modal 03 -->
-              <div class="portfolio-modal modal fade" id="leafletModal03" tabindex="-1" role="dialog" aria-labelledby="portfolioModal03Label" aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                        </button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-
-                                        <!-- Leaflet Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_Coffee_V2_TTI.jpg" alt="" />
-                                        <!-- Leaflet Modal - Text-->
-                                      <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('assets/img/pdf/Flyer_Coffee_V2_TTI.pdf');" target='_blank' value="PDF WITH PRICE" /></div>
-                                         <!--  <div class="my-2"><input type="button" onclick="window.open('assets/img/pdf/2071_Flyer_Luft Cube Air Purifier_V4-Client Friendly.pdf');" target='_blank' value="PDF WITHOUT PRICE" /></div>-->
-                                       <div class="my-2"><i class="fas fa-external-link-square-alt"> </i> <input type="button" onclick="window.open('https://www.twintechpromo.com/110-coffee-at-home-list.html');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                        <button class="btn btn-primary" data-dismiss="modal">
-                                            <i class="fas fa-times fa-fw"></i>
-                                            Close Window
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-
-       <!-- Leaflet Window Modal 02 -->
-       <div class="portfolio-modal modal fade" id="leafletModal02" tabindex="-1" role="dialog" aria-labelledby="portfolioModal02Label" aria-hidden="true">
-         <div class="modal-dialog modal-xl" role="document">
-             <div class="modal-content">
-                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                 </button>
-                 <div class="modal-body text-center">
-                     <div class="container">
-                         <div class="row justify-content-center">
-                             <div class="col-lg-8">
-
-                                 <!-- Leaflet Modal - Image-->
-                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/2073_Flyer_Soul-Buddie_V3_TTI.jpg" alt="" />
-                                 <!-- Leaflet Modal - Text-->
-                               <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('assets/img/pdf/2073_Flyer_Soul Buddie_V3_TTI.pdf');" target='_blank' value="PDF WITH PRICE" /></div>
-                                  <!--  <div class="my-2"><input type="button" onclick="window.open('assets/img/pdf/2071_Flyer_Luft Cube Air Purifier_V4-Client Friendly.pdf');" target='_blank' value="PDF WITHOUT PRICE" /></div>-->
-                                   <div class="my-2"><i class="fas fa-external-link-square-alt"> </i> <input type="button" onclick="window.open('https://www.twintechpromo.com/1026-soul-buddies.html');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-
-
-                                 <button class="btn btn-primary" data-dismiss="modal">
-                                     <i class="fas fa-times fa-fw"></i>
-                                     Close Window
-                                 </button>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-       </div>
-
-       <!-- Leaflet Window Modal 01 -->
-     <div class="portfolio-modal modal fade" id="leafletModal01" tabindex="-1" role="dialog" aria-labelledby="portfolioModal01Label" aria-hidden="true">
-         <div class="modal-dialog modal-xl" role="document">
-             <div class="modal-content">
-                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                 </button>
-                 <div class="modal-body text-center">
-                     <div class="container">
-                         <div class="row justify-content-center">
-                             <div class="col-lg-8">
-
-                                 <!-- Leaflet Modal - Image-->
-                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/2071_Flyer_Luft-Cube-Air-Purifier_V4_TTI.jpg" alt="" />
-                                 <!-- Leaflet Modal - Text-->
-                               <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('assets/img/pdf/2071_Flyer_Luft Cube Air Purifier_V4_TTI.pdf');" target='_blank' value="PDF WITH PRICE" /></div>
-                               <div class="my-2"><i class="fas fa-external-link-square-alt"> </i> <input type="button" onclick="window.open('https://www.twintechpromo.com/1023-luft-cube-air-purifier.html');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                  <!--  <div class="my-2"><input type="button" onclick="window.open('assets/img/pdf/2071_Flyer_Luft Cube Air Purifier_V4-Client Friendly.pdf');" target='_blank' value="PDF WITHOUT PRICE" /></div>-->
-
-                                 <button class="btn btn-primary" data-dismiss="modal">
-                                     <i class="fas fa-times fa-fw"></i>
-                                     Close Window
-                                 </button>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
-          <!-- Leaflet Window Modal 1 -->
-        <div class="portfolio-modal modal fade" id="leafletModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal11Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-
-                                      <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2009_EB04-Earbuds_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                  <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=130');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=131');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"> </i> <input type="button" onclick="window.open('https://www.twintechpromo.com/151-2151-ear-buds-plastic-eb04.html#/23-color-white');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <!-- Leaflet Window Modal 2 -->
-        <div class="portfolio-modal modal fade" id="leafletModal2" tabindex="-1" role="dialog" aria-labelledby="leafletModal2Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2025_Verge-Pro_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                  <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=140');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=141');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                        <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/756-3618-the-verge-pro-wireless-earbuds.html#/1-color-black');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window Modal 3 -->
-        <div class="portfolio-modal modal fade" id="leafletModal3" tabindex="-1" role="dialog" aria-labelledby="leafletModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2041_Night-Lamp_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                  <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=140');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=141');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/811-wireless-charging-night-lamp.html');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window Modal 4 -->
-        <div class="portfolio-modal modal fade" id="leafletModal4" tabindex="-1" role="dialog" aria-labelledby="leafletModal4Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2053_Centurion_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=74');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=75');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/841-centurion-bluetooth-headphones-with-100-hour-battery-life.html');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window Modal 5-->
-        <div class="portfolio-modal modal fade" id="leafletModal5" tabindex="-1" role="dialog" aria-labelledby="leafletModal5Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2054_Charge-All-Cable-2.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=112');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=113');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/849-charge-all-cable-20-type-c.html');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window Modal 6-->
-        <div class="portfolio-modal modal fade" id="leafletModal6" tabindex="-1" role="dialog" aria-labelledby="leafletModal6Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2219-2220_Power-Shot_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=124');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=125');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/search?controller=&s=power+shot');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window Modal 7-->
-        <div class="portfolio-modal modal fade" id="leafletModal7" tabindex="-1" role="dialog" aria-labelledby="leafletModal7Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2142_Lean-On-Me-Jr.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=132');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=133');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/310-2699-lean-on-me-jr.html#/1-color-black');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window Modal 8-->
-        <div class="portfolio-modal modal fade" id="leafletModal8" tabindex="-1" role="dialog" aria-labelledby="leafletModal8Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2147_A1-Bamboo-Speaker_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=142');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=143');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/310-2699-lean-on-me-jr.html#/1-color-black');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window Modal 9-->
-        <div class="portfolio-modal modal fade" id="leafletModal9" tabindex="-1" role="dialog" aria-labelledby="leafletModal9Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2218_Soul_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=80');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=81');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/720-soul-speaker-with-branded-can-packaging.html');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 10-->
-        <div class="portfolio-modal modal fade" id="leafletModal10" tabindex="-1" role="dialog" aria-labelledby="leafletModal10Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2225_Loop-Tale_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=82');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=83');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/search?controller=&s=loop');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 11-->
-        <div class="portfolio-modal modal fade" id="leafletModal11" tabindex="-1" role="dialog" aria-labelledby="leafletModal11Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2333-2334_Smart-Plug_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=145');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=146');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/search?controller=&s=plug');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 12-->
-        <div class="portfolio-modal modal fade" id="leafletModal12" tabindex="-1" role="dialog" aria-labelledby="leafletModal12Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2351_Cinema-Cable_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=114');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=115');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/783-3644-cinema-lightbox-charging-cable.html#/1-color-black');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 13-->
-        <div class="portfolio-modal modal fade" id="leafletModal13" tabindex="-1" role="dialog" aria-labelledby="leafletModal13Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2635_Chameleon-Square_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=136');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=137');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/340-2791-chameleon-square.html#/1-color-black');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 14-->
-        <div class="portfolio-modal modal fade" id="leafletModal14" tabindex="-1" role="dialog" aria-labelledby="leafletModal14Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2672-2674_Ginza_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=159');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=160');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/search?controller=&s=ginza');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 15-->
-        <div class="portfolio-modal modal fade" id="leafletModal15" tabindex="-1" role="dialog" aria-labelledby="leafletModal15Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2695_Pebble_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=147');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=148');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/search?controller=&s=2695');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 16-->
-        <div class="portfolio-modal modal fade" id="leafletModal16" tabindex="-1" role="dialog" aria-labelledby="leafletModal16Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2698_The-Tranq_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=88');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=89');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/470-the-tranq-noise-cancelling-headphones.html');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 17-->
-        <div class="portfolio-modal modal fade" id="leafletModal17" tabindex="-1" role="dialog" aria-labelledby="leafletModal17Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2702_Cypress_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=149');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=150');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/473-3191-cypress-bamboo-alarm-clock-bluetooth-speaker.html#/32-color-natural');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 18-->
-        <div class="portfolio-modal modal fade" id="leafletModal18" tabindex="-1" role="dialog" aria-labelledby="leafletModal18Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2736_Seek_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=92');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=93');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/538-3399-seek-bluetooth-tracker.html#/1-color-black');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Leaflet Window loop tale Modal 19-->
-        <div class="portfolio-modal modal fade" id="leafletModal19" tabindex="-1" role="dialog" aria-labelledby="leafletModal19Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2839_Awesome-Mixtape_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=100');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=101');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/843-3642-awesome-mixtape.html#/1-color-black');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 20-->
-        <div class="portfolio-modal modal fade" id="leafletModal20" tabindex="-1" role="dialog" aria-labelledby="leafletModal20Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2840_Seek-Lite_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=126');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=127');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/847-3645-seek-lite-bluetooth-tracker.html#/1-color-black');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 21-->
-        <div class="portfolio-modal modal fade" id="leafletModal21" tabindex="-1" role="dialog" aria-labelledby="leafletModal21Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_3043_Non-Contact-Infrared-Thermometer_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=274');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=275');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/938-non-contact-infrared-thermometer.html');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 22-->
-        <div class="portfolio-modal modal fade" id="leafletModal22" tabindex="-1" role="dialog" aria-labelledby="leafletModal22Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_9000_Sierra_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=157');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=158');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/556-20-oz-sierra-tumbler.html');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Leaflet Window loop tale Modal 23-->
-        <div class="portfolio-modal modal fade" id="leafletModal23" tabindex="-1" role="dialog" aria-labelledby="leafletModal23Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_9025_ZoeS-Bottle_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=102');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=103');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/613-3482-zoes-thermal-bottle-with-integrated-bluetooth-speaker-base.html#/1-color-black');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Leaflet Window loop tale Modal 24-->
-        <div class="portfolio-modal modal fade" id="leafletModal24" tabindex="-1" role="dialog" aria-labelledby="leafletModal24Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_9068_BROOC_V2_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=104');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=105');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/835-3643-brooc-uv-c-self-cleaning-insulated-bottle.html#/23-color-white');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Leaflet Window Power Shot Modal 25-->
-        <div class="portfolio-modal modal fade" id="leafletModal25" tabindex="-1" role="dialog" aria-labelledby="leafletModal25Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-
-                                    <!-- Leaflet Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/JPG/Flyer_2381_Power-Bar_WP.jpg" alt="" />
-                                    <!-- Leaflet Modal - Text-->
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=84');" target='_blank' value="PDF WITH PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('https://www.twintechpromo.com/index.php?controller=attachment&id_attachment=85');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                    <div class="my-2"><i class="fas fa-external-link-square-alt"></i> <input  type="button" onclick="window.open('https://www.twintechpromo.com/search?controller=&s=power+bar');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Top menu Modal 1 -->
-       <div class="portfolio-modal modal fade" id="menuModal1" tabindex="-1" role="dialog" aria-labelledby="menuModal11Label" aria-hidden="true">
-          <div class="modal-dialog modal-xl" role="document">
-              <div class="modal-content">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                  </button>
-                  <div class="modal-body text-center">
-                      <div class="container">
-                          <div class="row justify-content-center">
-                              <div class="col-lg-12">
-
-                                  <!-- Leaflet Modal - Image-->
-                                   <div class="embed-responsive embed-responsive-4by3">
-                                <iframe  width="900" height="675" src="https://www.promocorner.com/pageflip?i=5365" frameborder="0" allowfullscreen></iframe>
-                                  </div>
 
 
 
-                                <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('');" target='_blank' value="PDF WITH PRICE" /></div>
-                                  <div class="my-2"><i class="fas fa-file-download"></i> <input type="button" onclick="window.open('');" target='_blank' value="PDF WITHOUT PRICE" /></div>
-                                  <div class="my-2"><i class="fas fa-external-link-square-alt"> </i> <input type="button" onclick="window.open('');" target='_blank' value="WEBSITE PRODUCT PAGE" /></div>
-                                  <button class="btn btn-primary" data-dismiss="modal">
-                                      <i class="fas fa-times fa-fw"></i>
-                                      Close Window
-                                  </button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-       </div>
+<!--<img id="scream" src="logo-2.png" alt="The Scream" width="200" height="200">-->
+<img id="luft" src="connect-2-in-1-charging-cable.jpg" alt="image" width="0" height="0">
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
+<!--<img id="scream" src="logo-2.png" alt="The Scream" width="200" height="200">-->
+<img id="pink" src="pink.jpg" alt="image" width="0" height="0">
 
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-          <script src="js/stopvid.js"></script>
-    </body>
+<img id="black" src="black.jpg" alt="image" width="0" height="0">
+
+
+<script>
+
+function myCanvas() {
+
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        var img = document.getElementById("output");
+
+        if (img.height > 35) {
+             rh = 35/img.height;
+             h = img.height * rh;
+             w = img.width  * rh;
+      } else {
+            h = img.height;
+            w = img.width;
+      }
+        var x = 668-(w / 2);
+        var y = 316-(h / 2);
+        // get the top left position of the image
+
+        ctx.drawImage(img, x, y, w, h);
+console.log();
+console.log(h);
+console.log(w);
+
+
+}
+
+function scaleToFit(output){
+    // get the scale
+    var scale = Math.min(canvas.width / img.width, canvas.height / img.height);
+    // get the top left position of the image
+    var x = (canvas.width / 2) - (img.width / 2) * scale;
+    var y = (canvas.height / 2) - (img.height / 2) * scale;
+    ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
+}
+
+
+
+</script>
+<script>
+
+</script>
+
+
+<script>
+function dis() {
+      var element = document.getElementById("myCanvas");
+   element.classList.toggle("baseA");
+}
+</script>
+
+<script>
+
+
+  document.getElementById("luft").onload = function() {myCanvasA()};
+
+
+function myCanvasA() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("luft");
+  ctx.drawImage(img,0,0);
+
+}
+
+function myCanvasB() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("pink");
+    ctx.drawImage(img,0,0);
+
+}
+
+function myCanvasC() {
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      var img = document.getElementById("black");
+      ctx.drawImage(img,0,0);
+
+
+}
+
+</script>
+
+<script>
+
+
+
+
+
+function clear() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("clear");
+  ctx.drawImage(img,0,0);
+}
+
+</script>
+
+
+
+<script>
+
+
+
+
+// grab the canvas element, get the context for API access and
+// preset some variables
+var canvas = document.querySelector( 'canvas' ),
+    c = canvas.getContext( '2d' ),
+    mouseX = 0,
+    mouseY = 0,
+    width = 800,
+    height = 800;
+
+// resize the canvas
+canvas.width = width;
+canvas.height = height;
+
+
+// get the mouse position on the canvas (some browser trickery involved)
+canvas.addEventListener( 'mousemove', function( event ) {
+  if( event.offsetX ){
+    mouseX = event.offsetX;
+    mouseY = event.offsetY;
+  } else {
+    mouseX = event.pageX - event.target.offsetLeft;
+    mouseY = event.pageY - event.target.offsetTop;
+  }
+  // call the draw function
+  draw();
+}, false );
+
+canvas.addEventListener( 'mousedown', function( event ) {
+    mousedown = true;
+}, false );
+canvas.addEventListener( 'mouseup', function( event ) {
+    mousedown = false;
+}, false );
+
+
+
+var link = document.createElement('a');
+    link.innerHTML = 'Download';
+    link.addEventListener('click', function(ev) {
+    link.href = canvas.toDataURL();
+    link.download = "myImage.png";
+}, false);
+document.getElementById('linkspot').appendChild(link);
+
+
+
+</script>
+
+<script>
+
+
+        var loadFile = function(event) {
+        	var image = document.getElementById('output');
+        	image.src = URL.createObjectURL(event.target.files[0]);
+        };
+
+
+
+
+
+
+
+</script>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+
+</body>
 </html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
