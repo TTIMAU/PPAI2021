@@ -10410,3 +10410,105 @@ letter-spacing: 1px;
 	border-right: 10px solid transparent;
 	border-top: 15px solid #555;
 }
+
+
+.promoContainer {
+        border: solid #aaa 1px;
+        border-radius: 20px;
+        eight: 40%;
+        padding: .25em;
+        transition: 2s;
+        background-color: #004030;
+        margin: 0px 4em 0px 4em;
+
+}
+
+.promoContainer:hover {
+
+}
+
+
+.promologo {
+        width: 14em;
+        padding: .5em;
+
+
+}
+
+
+
+
+video-container {
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  position: relative;
+border-radius: 20px;
+order: solid #aaa 1px;
+}
+
+video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  border-radius: 20px;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #dc0000;
+  padding: 100px;
+
+}
+
+.promoguide {
+        idth: 300px;
+        eight: 18em;
+        -webkit-transition: all 2.5s ease-out;
+  -moz-transition: all 2.5s ease-out;
+  transition: all 2.5s ease-out;
+
+}
+
+.promoguide:hover {
+
+}
+
+.promotext {
+        color: #fff;
+        font-family: arial;
+        font-size: 1em;
+
+
+}
+
+
+
+#promopoint {
+  width: 40px;
+  height: 40px;
+  ackground: #fff;
+  position: relative;
+  animation: rotation 3s;
+  animation-iteration-count: 2;
+
+
+
+
+}
+
+@keyframes rotation {
+        from {top: 60px;}
+        to {top: 0px;}
+        from {opacity: 0;}
+        to {opacity: 1;}
+
+      }
+}
